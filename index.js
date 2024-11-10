@@ -51,7 +51,7 @@ function displayTemperature(response) {
   console.log(response.data.condition.description);
 
   let cityElement = document.querySelector("#current-city");
-  descriptionElement = response.data.condition.description;
+  descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = city;
 }
 
