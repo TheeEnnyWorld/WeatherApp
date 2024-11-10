@@ -54,7 +54,7 @@ function displayTemperature(response) {
 
   let cityElement = document.querySelector("#current-city");
   descriptionElement.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = response.data.temperatuure.humidity;
+  humidityElement.innerHTML = `${response.data.temperatuure.humidity}%`;
   cityElement.innerHTML = city;
 }
 
