@@ -47,7 +47,11 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#present-temperature");
   temperatureElement.innerHTML = `${temperature}`;
 
+  let descriptionElement = document.querySelector("#description");
+  console.log(response.data.condition.description);
+
   let cityElement = document.querySelector("#current-city");
+  descriptionElement = response.data.condition.description;
   cityElement.innerHTML = city;
 }
 
