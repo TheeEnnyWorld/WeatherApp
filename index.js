@@ -48,10 +48,12 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = `${temperature}`;
 
   let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
   console.log(response.data.condition.description);
 
   let cityElement = document.querySelector("#current-city");
   descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperatuure.humidity;
   cityElement.innerHTML = city;
 }
 
