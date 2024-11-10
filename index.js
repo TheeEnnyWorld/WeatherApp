@@ -55,6 +55,9 @@ function displayTemperature(response) {
     let humidityElement = document.querySelector("#humidity");
     let windSpeedElement = document.querySelector("#wind-speed");
     let timeElement = document.querySelector("#time");
+    let iconElement = document.querySelector("#icon");
+
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon" />`;
 
     // Convert the timestamp to a Date object
     let date = new Date(response.data.time * 1000);
