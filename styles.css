@@ -72,9 +72,11 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
+.weather-forecast-icon {
   width: 88px;
   height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .current-temperature-value {
